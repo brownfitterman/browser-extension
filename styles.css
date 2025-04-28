@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #0a1234;
+  --white: #ffffff;
+  --primary-gray: #202534;
+  --secondary-gray: #30354a;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--white);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border-style: none;
+  color: var(--white);
+  background-color: var(--secondary-gray);
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.navbar {
+  background: var(--primary-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3em;
+  padding: 2rem 1rem;
+  margin: 1rem 0rem;
+  border-radius: 1rem;
+}
+
+.navbar-logo {
+  color: var(--white);
+}
+
+.theme-toggle {
+  background: var(--secondary-gray);
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.extensions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+
+.extensions-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.extensions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.extension-card {
+  /* border: 1px solid red; */
+  background-color: var(--primary-gray);
+  border: 1px solid rgb(62, 62, 62);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.card-header {
+  border: 1px solid red;
+}
